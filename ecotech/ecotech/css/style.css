@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Definindo variaveis das cores */
+:root {
+    --branco: #FDFDFD;
+    --cinza: #F2F2F2;
+    --cinza-escuro: #606060;
+    --verde-claro: #C6E070;
+    --verde-escuro: #91C46C;
+    --azul-claro: #23A6C2;
+    --azul-escuro: #074E6C;
+    --laranja: #ef671e;
+    
+}
+/* Definindo elementos por seletores */
+
+/* seletores universal */
+*{
+    font-family: poppins;
+    background-color: var(--branco);
+}
+/* seletores pelo Main */
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* seletores pelo h1,2 e 3 */
+h1 {
+    font-size: 27px;
+    font-weight: 600;
+}
+h2 {
+    font-size: 23px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    color: var(--cinza-escuro);
+}
+
+/* seletores nota de rodape */
+
+small{
+    font-size: 13px;
+}
+#logo{
+    left: 15px;
+    right: 15px;
+    position: absolute;
+    background-color: var(--verde-escuro);
+}
+#logo-footer{
+    
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    background-color: var(--verde-claro);
+}
+
+header > nav {
+    background-color: var(--verde-escuro);
+    padding-bottom: 10px;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 58px;
+}
+
+footer > nav{
+    background-color: var(--verde-claro);
+    text-align: right;
+}
+/* seletores do a que e filho do nav que é filho do heaver */
+/* Paddin é espaçamento lateral */
+header > nav > a{
+    color: var(--azul-escuro);
+    background-color: var(--verde-escuro);
+    font-weight: 600;
+    padding: 0px 5px 0px 5px;
+    
+}
+
+header > nav > a:hover{
+    background-color: var(--azul-claro);
+    
+}
+
+footer > nav > a, footer > nav > div > div{
+    color: var(--cinza-escuro);
+    background-color: var(--verde-claro);
+    text-align: right;
+    padding: 0px 5px 30px 5px;
+}
+
+#footerrodape{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    justify-items: left;
+    background-color: var(--verde-claro);
+    
+}
+#footerrodape > a, #footerrodape > img {
+
+    background-color: var(--verde-claro);
+    padding: 10px;
+}
+
+#button-doacao {
+    background-color: var(--laranja);
+    color: var(--azul-escuro);
+    font-weight: 600;
+    border-style: hidden;
+    font-size: 18px;
+    width: 300px;
+    height: 80px;
+}
+
+#button-parceiro {
+    background-color: var(--azul-escuro);
+    color: var(--verde-claro);
+    border-style: hidden;
+    font-weight: 600;
+    font-size: 18px;
+    width: 300px;
+    height: 80px;
+}
+
+#button-doacao:hover{
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
+
+#button-parceiro:hover, .card > button:hover{
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
+
+#descricao {
+    margin: 25px 0px 25px 0px;
+    padding: 20px;
+    background-color: var(--verde-claro);
+    border-radius: 10px;
+}
+#descricao > p{
+    
+    background-color: var(--verde-claro);
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Primeira linha do P filha da descrição fica em negrito */
+
+#descricao > p:first-child{
+    font-weight: 900;
+}
+.container{
+
+    display: flex;
+}
+
+/* Estilizando imagem do card */
+
+.card >img{
+    
+    height: 200px;
+    width: 100%;
+   object-fit: cover;
+   
+}
+/* Estilizando card -  colocado todo o card em uma coluna*/
+/* Displei e para começar a deixar espansivo*/
+.card{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verde-escuro);
+    width: 33%;
+    margin: 5px;
+    padding: 0 0 5px 0px;
+    border-radius: 10px;
+}
+
+/* Estilizando titulo do card */
+.titulo-card{
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.card > button{
+    background-color: var(--azul-escuro);
+    color: var(--verde-claro);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card > p{
+    background-color: var(--verde-escuro);
+    color: var(--cinza-escuro);
+    font-weight: bold;
+}
+
+#copy {
+    text-align: center;
+}

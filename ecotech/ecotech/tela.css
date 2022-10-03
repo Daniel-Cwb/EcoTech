@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Definindo variaveis das cores */
+:root {
+    --branco: #FDFDFD;
+    --cinza: #F2F2F2;
+    --cinza-escuro: #606060;
+    --verde-claro: #C6E070;
+    --verde-escuro: #91C46C;
+    --azul-claro: #23A6C2;
+    --azul-escuro: #074E6C;
+    --laranja: #ef671e;
+    
+}
+/* Definindo elementos por seletores */
+
+/* seletores universal */
+*{
+    font-family: poppins;
+    background-color: var(--branco);
+}
+/* seletores pelo Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+/* seletores pelo h1,2 e 3 */
+h1 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--verde-claro);
+    margin-left: 10%;
+    margin-right: 30%;
+}
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--laranja);
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.txt2{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.txt5{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--verde-claro);
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.ref{
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--cinza-escuro);
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.a1{
+    font-size: 10px;
+    font-weight: normal;
+    color: var(--cinza-escuro);
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+/* seletores nota de rodape */
+
+small{
+    font-size: 13px;
+}
+#logo{
+    left: 15px;
+    right: 15px;
+    position: absolute;
+    background-color: var(--verde-escuro);
+}
+#logo-footer{
+    
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    background-color: var(--verde-claro);
+}
+
+header > nav {
+    background-color: var(--verde-escuro);
+    padding-bottom: 10px;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 58px;
+}
+
+footer > nav{
+    background-color: var(--verde-claro);
+    text-align: right;
+}
+/* seletores do a que e filho do nav que é filho do heaver */
+/* Paddin é espaçamento lateral */
+header > nav > a{
+    color: var(--azul-escuro);
+    background-color: var(--verde-escuro);
+    font-weight: 600;
+    padding: 0px 5px 0px 5px;
+    
+}
+
+header > nav > a:hover{
+    background-color: var(--azul-claro);
+    
+}
+
+footer > nav > a, footer > nav > div > div{
+    color: var(--cinza-escuro);
+    background-color: var(--verde-claro);
+    text-align: right;
+    padding: 0px 5px 30px 5px;
+}
+
+#footerrodape{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    justify-items: left;
+    background-color: var(--verde-claro);
+    
+}
+#footerrodape > a, #footerrodape > img {
+
+    background-color: var(--verde-claro);
+    padding: 10px;
+}
+
+
+main {
+    margin-left: 50px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+section >img{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.info {
+
+    margin-left: 20%;
+    height: 1000px;
+    width: 40%;
+    padding: 20px;
+
+}
+
+p {
+    color: var(--azul-escuro);
+    margin-left: 10%;
+    margin-right: 30%;
+    text-align: left;
+}
+#copy {
+    text-align: center;
+}
